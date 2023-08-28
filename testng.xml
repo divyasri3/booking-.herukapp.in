@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners><listener class-name="Extent.Listeners"></listener></listeners>
+    <test verbose="2" preserve-order="true" name="G:/api project storage/herukapp/src/test/java">
+        <classes>
+
+            <class name="Http_Request.Authetictaion_Request.Authentication">
+                <methods>
+                    <include name="test_Generate_Token"/>
+                </methods>
+            </class>
+            <class name="Http_Request.Post_Request.post_Pojo.CreateBooking">
+                <methods>
+                    <include name="test_CreateABooking"/>
+                </methods>
+            </class>
+            <class name="Http_Request.Get_Request.FetchSingleBookingId">
+                <methods>
+                    <include name="test_GetSingleBookingId"/>
+                </methods>
+            </class>
+            <class name="Http_Request.Put_Request.UpdateBooking">
+                <methods>
+                    <include name="test_UpdateBooking"/>
+                </methods>
+            </class>
+            <class name="Http_Request.Get_Request.FetchSingleBookingId">
+                <methods>
+                    <include name="test_GetSingleBookingId"/>
+                </methods>
+            </class>
+            <class name="Http_Request.Patch_Request.PartialUpdateBooking">
+                <methods>
+                    <include name="test_PartialUpdateDetails"/>
+                </methods>
+            </class>
+            <class name="Http_Request.Get_Request.FetchSingleBookingId">
+                <methods>
+                    <include name="test_GetSingleBookingId"/>
+                </methods>
+            </class>
+            <class name="Http_Request.Delete_Request.DeleteBooking">
+                <methods>
+                    <include name="test_DeleteBooking"/>
+                </methods>
+            </class>
+            <class name="Http_Request.Get_Request.FetchBookinIds">
+                <methods>
+                    <include name="test_GetAllBookingIds"/>
+                </methods>
+            </class>
+
+
+
+        </classes>
+    </test>
+</suite>
